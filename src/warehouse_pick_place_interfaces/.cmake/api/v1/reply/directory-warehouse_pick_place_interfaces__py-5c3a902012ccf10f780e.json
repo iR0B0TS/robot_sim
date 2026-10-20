@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "warehouse_pick_place_interfaces__py",
+		"source" : "/home/u05cn23/warehouse_ws/build/warehouse_pick_place_interfaces/warehouse_pick_place_interfaces__py"
+	}
+}

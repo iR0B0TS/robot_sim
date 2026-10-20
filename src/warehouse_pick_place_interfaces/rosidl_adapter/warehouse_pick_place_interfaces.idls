@@ -1,0 +1,4 @@
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_interfaces/rosidl_adapter/warehouse_pick_place_interfaces:msg/BoxPose.idl
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_interfaces/rosidl_adapter/warehouse_pick_place_interfaces:srv/SetBoxAttached.idl
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_interfaces/rosidl_adapter/warehouse_pick_place_interfaces:srv/DetectBoxes.idl
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_interfaces/rosidl_adapter/warehouse_pick_place_interfaces:action/ExecuteTask.idl

@@ -1,0 +1,16 @@
+{
+  "package_name": "warehouse_pick_place_interfaces",
+  "output_dir": "/home/u05cn23/warehouse_ws/build/warehouse_pick_place_interfaces/rosidl_generator_type_description/warehouse_pick_place_interfaces",
+  "idl_tuples": [
+    "/home/u05cn23/warehouse_ws/build/warehouse_pick_place_interfaces/rosidl_adapter/warehouse_pick_place_interfaces:msg/BoxPose.idl",
+    "/home/u05cn23/warehouse_ws/build/warehouse_pick_place_interfaces/rosidl_adapter/warehouse_pick_place_interfaces:srv/SetBoxAttached.idl",
+    "/home/u05cn23/warehouse_ws/build/warehouse_pick_place_interfaces/rosidl_adapter/warehouse_pick_place_interfaces:srv/DetectBoxes.idl",
+    "/home/u05cn23/warehouse_ws/build/warehouse_pick_place_interfaces/rosidl_adapter/warehouse_pick_place_interfaces:action/ExecuteTask.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs"
+  ]
+}

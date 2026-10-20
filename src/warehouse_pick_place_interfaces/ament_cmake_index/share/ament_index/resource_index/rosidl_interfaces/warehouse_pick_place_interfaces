@@ -1,0 +1,8 @@
+action/ExecuteTask.action
+action/ExecuteTask.idl
+msg/BoxPose.idl
+msg/BoxPose.msg
+srv/DetectBoxes.idl
+srv/DetectBoxes.srv
+srv/SetBoxAttached.idl
+srv/SetBoxAttached.srv

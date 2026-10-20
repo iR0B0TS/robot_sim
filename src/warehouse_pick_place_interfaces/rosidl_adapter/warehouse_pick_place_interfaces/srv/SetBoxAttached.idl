@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from warehouse_pick_place_interfaces/srv/SetBoxAttached.srv
+// generated code does not contain a copyright notice
+
+
+module warehouse_pick_place_interfaces {
+  module srv {
+    struct SetBoxAttached_Request {
+      string box_name;
+
+      boolean attached;
+    };
+    struct SetBoxAttached_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

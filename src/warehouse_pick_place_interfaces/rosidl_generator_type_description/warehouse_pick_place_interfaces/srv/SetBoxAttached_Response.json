@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "warehouse_pick_place_interfaces/srv/SetBoxAttached_Response",
+      "fields": [
+        {
+          "name": "success",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "message",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "warehouse_pick_place_interfaces/srv/SetBoxAttached_Response",
+      "hash_string": "RIHS01_38a204908ee3bd72c96d31693563052f996c5256b924c03be2e0e9a9bdeb3371"
+    }
+  ]
+}

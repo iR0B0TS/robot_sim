@@ -1,0 +1,10 @@
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_perception/CMakeFiles/uninstall.dir
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_perception/CMakeFiles/warehouse_pick_place_perception_uninstall.dir
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_perception/CMakeFiles/perception_node.dir
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_perception/CMakeFiles/test.dir
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_perception/CMakeFiles/edit_cache.dir
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_perception/CMakeFiles/rebuild_cache.dir
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_perception/CMakeFiles/list_install_components.dir
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_perception/CMakeFiles/install.dir
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_perception/CMakeFiles/install/local.dir
+/home/u05cn23/warehouse_ws/build/warehouse_pick_place_perception/CMakeFiles/install/strip.dir

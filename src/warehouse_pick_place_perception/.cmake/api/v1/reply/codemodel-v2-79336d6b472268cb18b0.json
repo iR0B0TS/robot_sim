@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-1444be1050171fe4e92c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "warehouse_pick_place_perception",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "perception_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-perception_node-8cd79c4e8afaf74debae.json",
+					"name" : "perception_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-68e070b307b34aa1bb10.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_perception_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_perception_uninstall-499775c33bdea68ff683.json",
+					"name" : "warehouse_pick_place_perception_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/u05cn23/warehouse_ws/build/warehouse_pick_place_perception",
+		"source" : "/home/u05cn23/warehouse_ws/src/warehouse-pick-place/warehouse_pick_place_perception"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

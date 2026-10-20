@@ -1,0 +1,5 @@
+string box_name
+bool attached
+---
+bool success
+string message

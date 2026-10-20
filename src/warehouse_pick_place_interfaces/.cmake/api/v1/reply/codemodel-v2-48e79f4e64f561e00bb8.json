@@ -1,0 +1,267 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-30e352f34d54f1021b64.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "warehouse_pick_place_interfaces__py",
+					"jsonFile" : "directory-warehouse_pick_place_interfaces__py-5c3a902012ccf10f780e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/u05cn23/warehouse_ws/build/warehouse_pick_place_interfaces/warehouse_pick_place_interfaces__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "warehouse_pick_place_interfaces__rs",
+					"jsonFile" : "directory-warehouse_pick_place_interfaces__rs-c2827c2c92f23a5c5f9d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/u05cn23/warehouse_ws/build/warehouse_pick_place_interfaces/warehouse_pick_place_interfaces__rs",
+					"targetIndexes" : 
+					[
+						15
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "warehouse_pick_place_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_warehouse_pick_place_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_warehouse_pick_place_interfaces_egg-1c5e4bd9351424a6a9d0.json",
+					"name" : "ament_cmake_python_build_warehouse_pick_place_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_warehouse_pick_place_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_warehouse_pick_place_interfaces-6c8986921c877b35c012.json",
+					"name" : "ament_cmake_python_copy_warehouse_pick_place_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-04e64fffbe4e0de7aa9b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces-f8a39440e57b9af4a87b.json",
+					"name" : "warehouse_pick_place_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces__cpp-ea0e13d7d21d8ba08440.json",
+					"name" : "warehouse_pick_place_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "warehouse_pick_place_interfaces__py::@4e05c567ded47472173d",
+					"jsonFile" : "target-warehouse_pick_place_interfaces__py-677f67033340f715de3b.json",
+					"name" : "warehouse_pick_place_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces__rosidl_generator_c-ad252b3d2c729ec7cb2a.json",
+					"name" : "warehouse_pick_place_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces__rosidl_generator_py-1c9bbb59cf16d70523c7.json",
+					"name" : "warehouse_pick_place_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces__rosidl_generator_type_description-d174fc257408c6cbffe6.json",
+					"name" : "warehouse_pick_place_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces__rosidl_typesupport_c-4f269840fb72e1562f2c.json",
+					"name" : "warehouse_pick_place_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces__rosidl_typesupport_cpp-ed0699d1f214fd926984.json",
+					"name" : "warehouse_pick_place_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces__rosidl_typesupport_fastrtps_c-0a827b3e55163ea3da53.json",
+					"name" : "warehouse_pick_place_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces__rosidl_typesupport_fastrtps_cpp-8f13c75b19083108180e.json",
+					"name" : "warehouse_pick_place_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces__rosidl_typesupport_introspection_c-f9a0964947a7e776e190.json",
+					"name" : "warehouse_pick_place_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces__rosidl_typesupport_introspection_cpp-94a0dae87e005d997117.json",
+					"name" : "warehouse_pick_place_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "warehouse_pick_place_interfaces__rs::@fd1389b9580e84f6655f",
+					"jsonFile" : "target-warehouse_pick_place_interfaces__rs-850222a538d011e6d2ef.json",
+					"name" : "warehouse_pick_place_interfaces__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces_s__rosidl_typesupport_c-6c0d60f53749064476cc.json",
+					"name" : "warehouse_pick_place_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces_s__rosidl_typesupport_fastrtps_c-c103e75fd1bba68070b9.json",
+					"name" : "warehouse_pick_place_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces_s__rosidl_typesupport_introspection_c-21ec6a10949ac95d8579.json",
+					"name" : "warehouse_pick_place_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "warehouse_pick_place_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-warehouse_pick_place_interfaces_uninstall-660e4fba590daa14bf8f.json",
+					"name" : "warehouse_pick_place_interfaces_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/u05cn23/warehouse_ws/build/warehouse_pick_place_interfaces",
+		"source" : "/home/u05cn23/warehouse_ws/src/warehouse-pick-place/warehouse_pick_place_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

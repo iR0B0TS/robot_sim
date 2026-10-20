@@ -1,0 +1,9 @@
+{
+  "package_name": "warehouse_pick_place_interfaces",
+  "non_idl_tuples": [
+    "/home/u05cn23/warehouse_ws/src/warehouse-pick-place/warehouse_pick_place_interfaces:msg/BoxPose.msg",
+    "/home/u05cn23/warehouse_ws/src/warehouse-pick-place/warehouse_pick_place_interfaces:srv/SetBoxAttached.srv",
+    "/home/u05cn23/warehouse_ws/src/warehouse-pick-place/warehouse_pick_place_interfaces:srv/DetectBoxes.srv",
+    "/home/u05cn23/warehouse_ws/src/warehouse-pick-place/warehouse_pick_place_interfaces:action/ExecuteTask.action"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes_Response",
+      "fields": [
+        {
+          "name": "success",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "message",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "boxes",
+          "type": {
+            "type_id": 145,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "warehouse_pick_place_interfaces/msg/BoxPose"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "warehouse_pick_place_interfaces/msg/BoxPose",
+        "fields": [
+          {
+            "name": "x",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "z",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "yaw",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes_Response",
+      "hash_string": "RIHS01_681e088f4ed924168d4f1e33cb5baddb4e7e6a4fbdd2de79ddaf18e8302d2f3e"
+    },
+    {
+      "type_name": "warehouse_pick_place_interfaces/msg/BoxPose",
+      "hash_string": "RIHS01_bd9189520bda6eaea208f0a72e2d2b748d297ef3bb1fa4e10352620b45f4157b"
+    }
+  ]
+}

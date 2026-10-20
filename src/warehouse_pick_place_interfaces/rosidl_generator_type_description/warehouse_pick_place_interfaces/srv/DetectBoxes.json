@@ -1,0 +1,271 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes",
+      "fields": [
+        {
+          "name": "request_message",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes_Request"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "response_message",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes_Response"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "event_message",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes_Event"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "builtin_interfaces/msg/Time",
+        "fields": [
+          {
+            "name": "sec",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "nanosec",
+            "type": {
+              "type_id": 7,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "service_msgs/msg/ServiceEventInfo",
+        "fields": [
+          {
+            "name": "event_type",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "client_gid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "sequence_number",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "warehouse_pick_place_interfaces/msg/BoxPose",
+        "fields": [
+          {
+            "name": "x",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "z",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "yaw",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes_Event",
+        "fields": [
+          {
+            "name": "info",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "service_msgs/msg/ServiceEventInfo"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "request",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes_Response"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes_Request",
+        "fields": [
+          {
+            "name": "structure_needs_at_least_one_member",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes_Response",
+        "fields": [
+          {
+            "name": "success",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "message",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "boxes",
+            "type": {
+              "type_id": 145,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "warehouse_pick_place_interfaces/msg/BoxPose"
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes",
+      "hash_string": "RIHS01_04d1accd4a543f2fda7176814160ecdabc8561cd9df1701c47ad4c7be40182c6"
+    },
+    {
+      "type_name": "builtin_interfaces/msg/Time",
+      "hash_string": "RIHS01_b106235e25a4c5ed35098aa0a61a3ee9c9b18d197f398b0e4206cea9acf9c197"
+    },
+    {
+      "type_name": "service_msgs/msg/ServiceEventInfo",
+      "hash_string": "RIHS01_41bcbbe07a75c9b52bc96bfd5c24d7f0fc0a08c0cb7921b3373c5732345a6f45"
+    },
+    {
+      "type_name": "warehouse_pick_place_interfaces/msg/BoxPose",
+      "hash_string": "RIHS01_bd9189520bda6eaea208f0a72e2d2b748d297ef3bb1fa4e10352620b45f4157b"
+    },
+    {
+      "type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes_Event",
+      "hash_string": "RIHS01_63159b903c31baff0d5c615a34eac961c59e54c7f7fa2638bc494a9a1d967c3e"
+    },
+    {
+      "type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes_Request",
+      "hash_string": "RIHS01_4aa91eaca342e167d90fc73ee93db75b9f22f1ecb919c2a4eacebf93c5975bb5"
+    },
+    {
+      "type_name": "warehouse_pick_place_interfaces/srv/DetectBoxes_Response",
+      "hash_string": "RIHS01_681e088f4ed924168d4f1e33cb5baddb4e7e6a4fbdd2de79ddaf18e8302d2f3e"
+    }
+  ]
+}

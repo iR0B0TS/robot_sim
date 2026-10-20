@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from warehouse_pick_place_interfaces/action/ExecuteTask.action
+// generated code does not contain a copyright notice
+
+#include "warehouse_pick_place_interfaces/msg/BoxPose.idl"
+
+module warehouse_pick_place_interfaces {
+  module action {
+    struct ExecuteTask_Goal {
+      string command;
+
+      string destination;
+
+      string box_name;
+
+      sequence<warehouse_pick_place_interfaces::msg::BoxPose> box_poses;
+
+      double x;
+
+      double y;
+
+      double z;
+    };
+    struct ExecuteTask_Result {
+      boolean success;
+
+      string message;
+    };
+    struct ExecuteTask_Feedback {
+      string state;
+
+      float progress;
+    };
+  };
+};
