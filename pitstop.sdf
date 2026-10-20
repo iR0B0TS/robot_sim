@@ -1,0 +1,193 @@
+
+<?xml version="1.0"?>
+<sdf version="1.8">
+
+  <world name="f1_pitstop">
+
+    <!-- ============================== -->
+    <!-- 1. GAZEBO SYSTEM PLUGINS       -->
+    <!-- ============================== -->
+
+    <plugin filename="gz-sim-physics-system"
+            name="gz::sim::systems::Physics"/>
+
+    <plugin filename="gz-sim-user-commands-system"
+            name="gz::sim::systems::UserCommands"/>
+
+    <plugin filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster"/>
+
+
+    <!-- ============================== -->
+    <!-- 2. LIGHTING                    -->
+    <!-- ============================== -->
+
+    <light type="directional" name="sun">
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
+
+
+    <!-- ============================== -->
+    <!-- 3. GROUND / PIT AREA           -->
+    <!-- ============================== -->
+
+    <model name="ground">
+      <static>true</static>
+
+      <link name="ground_link">
+
+        <collision name="ground_collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>30 20</size>
+            </plane>
+          </geometry>
+        </collision>
+
+        <visual name="ground_visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>30 20</size>
+            </plane>
+          </geometry>
+
+          <material>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+          </material>
+        </visual>
+
+      </link>
+    </model>
+
+
+    <!-- ============================== -->
+    <!-- 4. F1 CAR MODEL                -->
+    <!-- ============================== -->
+
+    <model name="f1_car">
+
+      <!-- Stationary car for initial testing -->
+      <static>true</static>
+
+      <!-- Car positioned at the centre -->
+      <pose>0 0 0 0 0 0</pose>
+
+      <link name="body">
+
+        <!-- Main chassis -->
+        <visual name="chassis">
+          <pose>0 0 0.45 0 0 0</pose>
+
+          <geometry>
+            <box>
+              <size>4.5 1.8 0.5</size>
+            </box>
+          </geometry>
+
+          <material>
+            <ambient>0.9 0.05 0.05 1</ambient>
+            <diffuse>0.9 0.05 0.05 1</diffuse>
+          </material>
+        </visual>
+
+
+        <!-- Cockpit -->
+        <visual name="cockpit">
+          <pose>-0.3 0 0.85 0 0 0</pose>
+
+          <geometry>
+            <box>
+              <size>1.2 0.8 0.4</size>
+            </box>
+          </geometry>
+
+          <material>
+            <ambient>0.1 0.1 0.1 1</ambient>
+            <diffuse>0.1 0.1 0.1 1</diffuse>
+          </material>
+        </visual>
+
+
+        <!-- Front Left Wheel -->
+        <visual name="front_left_wheel">
+          <pose>1.4 1.05 0.35 1.5708 0 0</pose>
+
+          <geometry>
+            <cylinder>
+              <radius>0.35</radius>
+              <length>0.3</length>
+            </cylinder>
+          </geometry>
+
+          <material>
+            <ambient>0.02 0.02 0.02 1</ambient>
+            <diffuse>0.02 0.02 0.02 1</diffuse>
+          </material>
+        </visual>
+
+
+        <!-- Front Right Wheel -->
+        <visual name="front_right_wheel">
+          <pose>1.4 -1.05 0.35 1.5708 0 0</pose>
+
+          <geometry>
+            <cylinder>
+              <radius>0.35</radius>
+              <length>0.3</length>
+            </cylinder>
+          </geometry>
+
+          <material>
+            <ambient>0.02 0.02 0.02 1</ambient>
+            <diffuse>0.02 0.02 0.02 1</diffuse>
+          </material>
+        </visual>
+
+
+        <!-- Rear Left Wheel -->
+        <visual name="rear_left_wheel">
+          <pose>-1.4 1.05 0.35 1.5708 0 0</pose>
+
+          <geometry>
+            <cylinder>
+              <radius>0.35</radius>
+              <length>0.3</length>
+            </cylinder>
+          </geometry>
+
+          <material>
+            <ambient>0.02 0.02 0.02 1</ambient>
+            <diffuse>0.02 0.02 0.02 1</diffuse>
+          </material>
+        </visual>
+
+
+        <!-- Rear Right Wheel -->
+        <visual name="rear_right_wheel">
+          <pose>-1.4 -1.05 0.35 1.5708 0 0</pose>
+
+          <geometry>
+            <cylinder>
+              <radius>0.35</radius>
+              <length>0.3</length>
+            </cylinder>
+          </geometry>
+
+          <material>
+            <ambient>0.02 0.02 0.02 1</ambient>
+            <diffuse>0.02 0.02 0.02 1</diffuse>
+          </material>
+        </visual>
+
+      </link>
+    </model>
+
+  </world>
+
+</sdf>
