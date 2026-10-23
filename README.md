@@ -3,12 +3,10 @@ For CS4048 Group project.
 
 Made by Kayma's bullies.
 
-F1 Pit Stop project summary:
-
-description
+## F1 Pit Stop project summary
+Description
 
 ## Opening Gazebo
-
 To open your F1 Gazebo simulator in your Ubuntu VM, run:
 > cd project_folder
 
