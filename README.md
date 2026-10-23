@@ -10,7 +10,8 @@ description
 ## Opening Gazebo
 
 To open your F1 Gazebo simulator in your Ubuntu VM, run:
-> cd project folder
+> cd project_folder
+
 > gz sim src/folder/folder/file-name.sdf
 
 To open Gazebo without a specific project:
