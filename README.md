@@ -1,10 +1,10 @@
-# robot_sim
-For CS4048 Group project.
+# F1 Pit Stop: Robot Sim
+For CS4048 group project.
 
 Made by Kayma's bullies.
 
-## F1 Pit Stop project summary
-Description
+## Project Summary
+Description.
 
 ## Opening Gazebo
 To open your F1 Gazebo simulator in your Ubuntu VM, run:
