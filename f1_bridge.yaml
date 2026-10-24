@@ -1,0 +1,92 @@
+# ros_gz_bridge config: lets ROS 2 send detach / attach commands to the F1 car.
+# Use from ROS 2 with e.g.:
+#   ros2 topic pub --once /f1/bolt_fl/detach std_msgs/msg/Empty {}
+#   ros2 topic pub --once /f1/bolt_fl/attach std_msgs/msg/Empty {}
+
+- ros_topic_name: "/f1/wheel_fl/detach"
+  gz_topic_name: "/f1/wheel_fl/detach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/f1/wheel_fl/attach"
+  gz_topic_name: "/f1/wheel_fl/attach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/f1/wheel_fr/detach"
+  gz_topic_name: "/f1/wheel_fr/detach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/f1/wheel_fr/attach"
+  gz_topic_name: "/f1/wheel_fr/attach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/f1/wheel_bl/detach"
+  gz_topic_name: "/f1/wheel_bl/detach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/f1/wheel_bl/attach"
+  gz_topic_name: "/f1/wheel_bl/attach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/f1/wheel_br/detach"
+  gz_topic_name: "/f1/wheel_br/detach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/f1/wheel_br/attach"
+  gz_topic_name: "/f1/wheel_br/attach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/f1/bolt_fl/detach"
+  gz_topic_name: "/f1/bolt_fl/detach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/f1/bolt_fl/attach"
+  gz_topic_name: "/f1/bolt_fl/attach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/f1/bolt_fr/detach"
+  gz_topic_name: "/f1/bolt_fr/detach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/f1/bolt_fr/attach"
+  gz_topic_name: "/f1/bolt_fr/attach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/f1/bolt_bl/detach"
+  gz_topic_name: "/f1/bolt_bl/detach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/f1/bolt_bl/attach"
+  gz_topic_name: "/f1/bolt_bl/attach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/f1/bolt_br/detach"
+  gz_topic_name: "/f1/bolt_br/detach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/f1/bolt_br/attach"
+  gz_topic_name: "/f1/bolt_br/attach"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ

@@ -1,4 +1,4 @@
-<sdf version='1.12'>
+<sdf version='1.11'>
   <world name='sonoma'>
     <scene>
       <grid>false</grid>
@@ -94,7 +94,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>file:///home/a/.gz/fuel/fuel.ignitionrobotics.org/openrobotics/models/sonoma raceway/3/meshes/Raceway.obj</uri>
+              <uri>file:///home/biggill/.gz/fuel/fuel.gazebosim.org/openrobotics/models/sonoma raceway/3/meshes/Raceway.obj</uri>
               <scale>0.025399999999999999 0.025399999999999999 0.025399999999999999</scale>
             </mesh>
           </geometry>
@@ -102,7 +102,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>file:///home/a/.gz/fuel/fuel.ignitionrobotics.org/openrobotics/models/sonoma raceway/3/meshes/Raceway.obj</uri>
+              <uri>file:///home/biggill/.gz/fuel/fuel.gazebosim.org/openrobotics/models/sonoma raceway/3/meshes/Raceway.obj</uri>
               <scale>0.025399999999999999 0.025399999999999999 0.025399999999999999</scale>
             </mesh>
           </geometry>
@@ -142,7 +142,7 @@
         <visual name='chassis_visual'>
           <geometry>
             <mesh>
-              <uri>file:///home/a/.gz/fuel/fuel.ignitionrobotics.org/openrobotics/models/prius hybrid/2/meshes/Hybrid.obj</uri>
+              <uri>file:///home/biggill/.gz/fuel/fuel.gazebosim.org/openrobotics/models/prius hybrid/3/meshes/Hybrid.obj</uri>
               <scale>0.01 0.01 0.01</scale>
               <submesh>
                 <name>Hybrid</name>
@@ -154,7 +154,7 @@
         <visual name='interior_visual'>
           <geometry>
             <mesh>
-              <uri>file:///home/a/.gz/fuel/fuel.ignitionrobotics.org/openrobotics/models/prius hybrid/2/meshes/Hybrid.obj</uri>
+              <uri>file:///home/biggill/.gz/fuel/fuel.gazebosim.org/openrobotics/models/prius hybrid/3/meshes/Hybrid.obj</uri>
               <scale>0.01 0.01 0.01</scale>
               <submesh>
                 <name>Hybrid_Interior</name>
@@ -166,7 +166,7 @@
         <visual name='windows_visual'>
           <geometry>
             <mesh>
-              <uri>file:///home/a/.gz/fuel/fuel.ignitionrobotics.org/openrobotics/models/prius hybrid/2/meshes/Hybrid.obj</uri>
+              <uri>file:///home/biggill/.gz/fuel/fuel.gazebosim.org/openrobotics/models/prius hybrid/3/meshes/Hybrid.obj</uri>
               <scale>0.01 0.01 0.01</scale>
               <submesh>
                 <name>Hybrid_Windows</name>
@@ -538,7 +538,7 @@
           <pose>0 0 0 1.302101 0 0</pose>
           <geometry>
             <mesh>
-              <uri>file:///home/a/.gz/fuel/fuel.ignitionrobotics.org/openrobotics/models/prius hybrid/2/meshes/Hybrid.obj</uri>
+              <uri>file:///home/biggill/.gz/fuel/fuel.gazebosim.org/openrobotics/models/prius hybrid/3/meshes/Hybrid.obj</uri>
               <scale>0.01 0.01 0.01</scale>
               <submesh>
                 <name>Steering_Wheel</name>
@@ -567,7 +567,7 @@
           <pose>0.040000000000000001 0 0 0 0 0</pose>
           <geometry>
             <mesh>
-              <uri>file:///home/a/.gz/fuel/fuel.ignitionrobotics.org/openrobotics/models/prius hybrid/2/meshes/Hybrid.obj</uri>
+              <uri>file:///home/biggill/.gz/fuel/fuel.gazebosim.org/openrobotics/models/prius hybrid/3/meshes/Hybrid.obj</uri>
               <scale>0.01 0.01 0.01</scale>
               <submesh>
                 <name>Wheel_Front_Left_</name>
@@ -622,7 +622,7 @@
           <pose>0 0 0 0 0 0</pose>
           <geometry>
             <mesh>
-              <uri>file:///home/a/.gz/fuel/fuel.ignitionrobotics.org/openrobotics/models/prius hybrid/2/meshes/Hybrid.obj</uri>
+              <uri>file:///home/biggill/.gz/fuel/fuel.gazebosim.org/openrobotics/models/prius hybrid/3/meshes/Hybrid.obj</uri>
               <scale>0.01 0.01 0.01</scale>
               <submesh>
                 <name>Wheel_Front_Right</name>
@@ -676,7 +676,7 @@
           <pose>0.040000000000000001 0 0 0 0 0</pose>
           <geometry>
             <mesh>
-              <uri>file:///home/a/.gz/fuel/fuel.ignitionrobotics.org/openrobotics/models/prius hybrid/2/meshes/Hybrid.obj</uri>
+              <uri>file:///home/biggill/.gz/fuel/fuel.gazebosim.org/openrobotics/models/prius hybrid/3/meshes/Hybrid.obj</uri>
               <scale>0.01 0.01 0.01</scale>
               <submesh>
                 <name>Wheel_Front_Left_</name>
@@ -730,7 +730,7 @@
           <pose>-0.040000000000000001 0 0 0 0 0</pose>
           <geometry>
             <mesh>
-              <uri>file:///home/a/.gz/fuel/fuel.ignitionrobotics.org/openrobotics/models/prius hybrid/2/meshes/Hybrid.obj</uri>
+              <uri>file:///home/biggill/.gz/fuel/fuel.gazebosim.org/openrobotics/models/prius hybrid/3/meshes/Hybrid.obj</uri>
               <scale>0.01 0.01 0.01</scale>
               <submesh>
                 <name>Wheel_Front_Right</name>

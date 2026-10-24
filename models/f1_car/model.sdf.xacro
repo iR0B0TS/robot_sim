@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<!--
+  F1 car with detachable wheels and bolts Gazebo Harmonic (xacro).
+
+  change the numbers under SETTINGS, then turn this into the model.sdf .
+      running: xacro model.sdf.xacro -o model.sdf
+      will give the : model.sdf, if 
+
+  Folder:  f1_car/  model.config  model.sdf.xacro  model.sdf  meshes/{body,wheel,bolt}.glb
+  Topics:  /f1/<part>/detach   /f1/<part>/attach   /f1/<part>/state   (bolt off before its wheel)
+  Parts:   wheel_fl wheel_fr wheel_bl wheel_br bolt_fl bolt_fr bolt_bl bolt_br
+-->
+<sdf version="1.9" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!--  SETTINGS (all from Blender)  -->
+  <!-- lift so tyres touch the ground (hopefully don't clip) -->
+  <xacro:property name="lift"       value="0.57643"/>  
+  <xacro:property name="wheel_z"    value="-0.20393"/> 
+   <!-- wheel Locations for XYZ --> 
+  <xacro:property name="front_x"    value="2.1897"/>   
+  <xacro:property name="front_y"    value="0.89788"/>   
+  <xacro:property name="rear_x"     value="-1.4726"/>   
+  <xacro:property name="rear_y"     value="0.87607"/>   
+  <!-- wheel Dimensions -->
+  <xacro:property name="wheel_d"    value="0.745"/>     
+  <xacro:property name="wheel_w"    value="0.408"/>     
+  <xacro:property name="wheel_mass" value="12"/>
+
+  <!-- Where the bolt sits relative to its wheel's centre = FLBolt Location - FLwheel Location.
+       Same wheel mesh everywhere, so the same offset works at every corner. -->
+  <xacro:property name="bolt_dx"    value="${2.18452 - front_x}"/>
+  <xacro:property name="bolt_dy"    value="${0.984812 - front_y}"/>
+  <xacro:property name="bolt_dz"    value="${-0.203805 - wheel_z}"/>
+  
+  <!-- bolt Dimensions Y (width) -->
+  <xacro:property name="bolt_d"     value="0.061882"/>  
+  <xacro:property name="bolt_w"     value="0.042887"/> 
+
+  <xacro:property name="bolt_mass"  value="0.5"/>
+
+  <xacro:property name="body_mass"  value="700"/>
+  <!-- collision box between the wheels -->
+  <xacro:property name="chassis"    value="4.5 0.9 0.4"/>  
+
+  <!--  MACROS  -->
+
+  <!-- One wheel or bolt: a solid cylinder(or a cone for the bolt) whose axis is the axle (Y).
+       Inertia is worked out from its size and mass. -->
+  <xacro:macro name="part" params="name mesh x y z yaw d w mass mask">
+    <xacro:property name="r" value="${d / 2}"/>
+    <model name="${name}">
+      <pose relative_to="blender">${x} ${y} ${z} 0 0 ${yaw}</pose>
+      <link name="link">
+        <inertial>
+          <mass>${mass}</mass>
+          <inertia>
+            <ixx>${mass * (3*r*r + w*w) / 12}</ixx>
+            <iyy>${mass * r*r / 2}</iyy>
+            <izz>${mass * (3*r*r + w*w) / 12}</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <visual name="v"><geometry><mesh><uri>model://f1_car/meshes/${mesh}.glb</uri></mesh></geometry></visual>
+        <collision name="c">
+          <pose>0 0 0 ${pi/2} 0 0</pose>
+          <geometry><cylinder><radius>${r}</radius><length>${w}</length></cylinder></geometry>
+          <surface><contact><collide_bitmask>${mask}</collide_bitmask></contact></surface>
+        </collision>
+      </link>
+    </model>
+  </xacro:macro>
+
+  <!-- A joint holding one part to the body, Starts locked. -->
+  <xacro:macro name="joint" params="part">
+    <plugin filename="gz-sim-detachable-joint-system" name="gz::sim::systems::DetachableJoint">
+      <parent_link>body</parent_link>
+      <child_model>${part}</child_model>
+      <child_link>link</child_link>
+      <detach_topic>/f1/${part}/detach</detach_topic>
+      <attach_topic>/f1/${part}/attach</attach_topic>
+      <output_topic>/f1/${part}/state</output_topic>
+    </plugin>
+  </xacro:macro>
+
+  <!-- A whole corner: wheel + bolt + their two joints.
+       side = 1 for the driver's left (+Y), -1 for the right. The right side is the
+       same mesh turned 180 degrees, so the bolt offset flips with it. -->
+  <xacro:macro name="corner" params="name x y side">
+    <xacro:property name="yaw" value="${0 if side == 1 else pi}"/>
+    <xacro:part name="wheel_${name}" mesh="wheel"
+                x="${x}" y="${side * y}" z="${wheel_z}" yaw="${yaw}"
+                d="${wheel_d}" w="${wheel_w}" mass="${wheel_mass}" mask="0x01"/>
+    <xacro:part name="bolt_${name}" mesh="bolt"
+                x="${x + side * bolt_dx}" y="${side * (y + bolt_dy)}" z="${wheel_z + bolt_dz}" yaw="${yaw}"
+                d="${bolt_d}" w="${bolt_w}" mass="${bolt_mass}" mask="0x02"/>
+    <xacro:joint part="wheel_${name}"/>
+    <xacro:joint part="bolt_${name}"/>
+  </xacro:macro>
+
+  <!--  THE CAR  -->
+  <model name="f1_car">
+
+    <!-- Undoes Blender's offset, so Blender's numbers can be used unchanged -->
+    <frame name="blender"><pose>0 0 ${lift} 0 0 0</pose></frame>
+
+    <link name="body">
+      <pose relative_to="blender">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 ${wheel_z} 0 0 0</pose>
+        <mass>${body_mass}</mass>
+        <inertia><ixx>280</ixx><iyy>1876</iyy><izz>2062</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+      </inertial>
+      <visual name="v"><geometry><mesh><uri>model://f1_car/meshes/body.glb</uri></mesh></geometry></visual>
+      <collision name="c">
+        <pose>0 0 ${wheel_z} 0 0 0</pose>
+        <geometry><box><size>${chassis}</size></box></geometry>
+        <surface><contact><collide_bitmask>0x04</collide_bitmask></contact></surface>
+      </collision>
+    </link>
+
+    <xacro:corner name="fl" x="${front_x}" y="${front_y}" side="1"/>
+    <xacro:corner name="fr" x="${front_x}" y="${front_y}" side="-1"/>
+    <xacro:corner name="bl" x="${rear_x}"  y="${rear_y}"  side="1"/>
+    <xacro:corner name="br" x="${rear_x}"  y="${rear_y}"  side="-1"/>
+
+  </model>
+</sdf>
