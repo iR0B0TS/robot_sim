@@ -28,4 +28,4 @@ You need to adjust the path of where the .sdf file points to, find the line:
 
 And adjust it to where-ever you have put it.
 
-I used this pitstop: https://sketchfab.com/3d-models/red-bull-f1-garage-086dda7566f64c6c930354687e2ec274
+I used this (Creative Commons licensed) pitstop: https://sketchfab.com/3d-models/red-bull-f1-garage-086dda7566f64c6c930354687e2ec274
