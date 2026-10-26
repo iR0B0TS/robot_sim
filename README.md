@@ -14,10 +14,14 @@ To open your F1 Gazebo simulator in your Ubuntu VM, run:
 
 To open Gazebo without a specific project:
 > gz sim
+set up before run: 
+source /opt/ros/jazzy/setup.bash
+export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:$(pwd)/models
 
-Note: still need to add f1 car to the track environment
-    <include>
-      <uri>model://f1_car</uri>
-      <name>f1_car</name>
-      <pose>274.78 -131.96 3.0 0 0 0.97</pose>
-    </include>
+to run: 
+gz sim worlds/nicetrack.sdf --render-engine ogre
+
+to run unpaused: 
+gz sim -r worlds/nicetrack.sdf --render-engine ogre
+ 
+
