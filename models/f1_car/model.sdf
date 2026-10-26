@@ -4,20 +4,19 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <!--
-  F1 car with detachable wheels and bolts - Gazebo Harmonic (xacro version).
+  F1 car with detachable wheels and bolts Gazebo Harmonic (xacro).
 
-  Edit the numbers in SETTINGS, then turn this into the model.sdf Gazebo reads:
-      xacro model.sdf.xacro > model.sdf
+  change the numbers under SETTINGS, then turn this into the model.sdf .
+      running: xacro model.sdf.xacro -o model.sdf
+      will give the : model.sdf, if 
 
   Folder:  f1_car/  model.config  model.sdf.xacro  model.sdf  meshes/{body,wheel,bolt}.glb
   Topics:  /f1/<part>/detach   /f1/<part>/attach   /f1/<part>/state   (bolt off before its wheel)
   Parts:   wheel_fl wheel_fr wheel_bl wheel_br bolt_fl bolt_fr bolt_bl bolt_br
 -->
 <sdf version="1.9">
-  <!-- BLwheel Location Y -->
-  <!-- collision box between the wheels -->
-  <!-- ===================== MACROS ===================== -->
-  <!-- ===================== THE CAR ===================== -->
+  <!--  MACROS  -->
+  <!--  THE CAR  -->
   <model name="f1_car">
     <!-- Undoes Blender's offset, so Blender's numbers can be used unchanged -->
     <frame name="blender">
@@ -38,6 +37,7 @@
         </inertia>
       </inertial>
       <visual name="v">
+        <pose>0 0 0 1.5708 0 0</pose>
         <geometry>
           <mesh>
             <uri>model://f1_car/meshes/body.glb</uri>
@@ -51,11 +51,7 @@
             <size>4.5 0.9 0.4</size>
           </box>
         </geometry>
-        <surface>
-          <contact>
-            <collide_bitmask>0x04</collide_bitmask>
-          </contact>
-        </surface>
+        <!-- <surface><contact><collide_bitmask>0x04</collide_bitmask></contact></surface> -->
       </collision>
     </link>
     <model name="wheel_fl">
@@ -73,6 +69,7 @@
           </inertia>
         </inertial>
         <visual name="v">
+          <pose>-2.18452 -0.83689 0.20380 1.5707963267948966 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://f1_car/meshes/wheel.glb</uri>
@@ -87,11 +84,7 @@
               <length>0.408</length>
             </cylinder>
           </geometry>
-          <surface>
-            <contact>
-              <collide_bitmask>0x01</collide_bitmask>
-            </contact>
-          </surface>
+          <!-- <surface><contact><collide_bitmask>${mask}</collide_bitmask></contact></surface> -->
         </collision>
       </link>
     </model>
@@ -110,6 +103,7 @@
           </inertia>
         </inertial>
         <visual name="v">
+          <pose>-2.18452 -0.9793 0.20380 1.5707963267948966 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://f1_car/meshes/bolt.glb</uri>
@@ -124,11 +118,7 @@
               <length>0.042887</length>
             </cylinder>
           </geometry>
-          <surface>
-            <contact>
-              <collide_bitmask>0x02</collide_bitmask>
-            </contact>
-          </surface>
+          <!-- <surface><contact><collide_bitmask>${mask}</collide_bitmask></contact></surface> -->
         </collision>
       </link>
     </model>
@@ -163,6 +153,7 @@
           </inertia>
         </inertial>
         <visual name="v">
+          <pose>-2.18452 -0.83689 0.20380 1.5707963267948966 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://f1_car/meshes/wheel.glb</uri>
@@ -177,11 +168,7 @@
               <length>0.408</length>
             </cylinder>
           </geometry>
-          <surface>
-            <contact>
-              <collide_bitmask>0x01</collide_bitmask>
-            </contact>
-          </surface>
+          <!-- <surface><contact><collide_bitmask>${mask}</collide_bitmask></contact></surface> -->
         </collision>
       </link>
     </model>
@@ -200,6 +187,7 @@
           </inertia>
         </inertial>
         <visual name="v">
+          <pose>-2.18452 -0.9793 0.20380 1.5707963267948966 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://f1_car/meshes/bolt.glb</uri>
@@ -214,11 +202,7 @@
               <length>0.042887</length>
             </cylinder>
           </geometry>
-          <surface>
-            <contact>
-              <collide_bitmask>0x02</collide_bitmask>
-            </contact>
-          </surface>
+          <!-- <surface><contact><collide_bitmask>${mask}</collide_bitmask></contact></surface> -->
         </collision>
       </link>
     </model>
@@ -253,6 +237,7 @@
           </inertia>
         </inertial>
         <visual name="v">
+          <pose>-2.18452 -0.83689 0.20380 1.5707963267948966 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://f1_car/meshes/wheel.glb</uri>
@@ -267,11 +252,7 @@
               <length>0.408</length>
             </cylinder>
           </geometry>
-          <surface>
-            <contact>
-              <collide_bitmask>0x01</collide_bitmask>
-            </contact>
-          </surface>
+          <!-- <surface><contact><collide_bitmask>${mask}</collide_bitmask></contact></surface> -->
         </collision>
       </link>
     </model>
@@ -290,6 +271,7 @@
           </inertia>
         </inertial>
         <visual name="v">
+          <pose>-2.18452 -0.9793 0.20380 1.5707963267948966 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://f1_car/meshes/bolt.glb</uri>
@@ -304,11 +286,7 @@
               <length>0.042887</length>
             </cylinder>
           </geometry>
-          <surface>
-            <contact>
-              <collide_bitmask>0x02</collide_bitmask>
-            </contact>
-          </surface>
+          <!-- <surface><contact><collide_bitmask>${mask}</collide_bitmask></contact></surface> -->
         </collision>
       </link>
     </model>
@@ -343,6 +321,7 @@
           </inertia>
         </inertial>
         <visual name="v">
+          <pose>-2.18452 -0.83689 0.20380 1.5707963267948966 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://f1_car/meshes/wheel.glb</uri>
@@ -357,11 +336,7 @@
               <length>0.408</length>
             </cylinder>
           </geometry>
-          <surface>
-            <contact>
-              <collide_bitmask>0x01</collide_bitmask>
-            </contact>
-          </surface>
+          <!-- <surface><contact><collide_bitmask>${mask}</collide_bitmask></contact></surface> -->
         </collision>
       </link>
     </model>
@@ -380,6 +355,7 @@
           </inertia>
         </inertial>
         <visual name="v">
+          <pose>-2.18452 -0.9793 0.20380 1.5707963267948966 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://f1_car/meshes/bolt.glb</uri>
@@ -394,11 +370,7 @@
               <length>0.042887</length>
             </cylinder>
           </geometry>
-          <surface>
-            <contact>
-              <collide_bitmask>0x02</collide_bitmask>
-            </contact>
-          </surface>
+          <!-- <surface><contact><collide_bitmask>${mask}</collide_bitmask></contact></surface> -->
         </collision>
       </link>
     </model>

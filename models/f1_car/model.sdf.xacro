@@ -60,11 +60,14 @@
             <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz>
           </inertia>
         </inertial>
-        <visual name="v"><geometry><mesh><uri>model://f1_car/meshes/${mesh}.glb</uri></mesh></geometry></visual>
+        <visual name="v">
+        <pose>-2.18452 ${-0.83689 if mesh =='wheel' else -0.97930} 0.20380 ${pi/2} 0 0</pose>
+        <geometry><mesh><uri>model://f1_car/meshes/${mesh}.glb</uri></mesh></geometry>
+        </visual>
         <collision name="c">
           <pose>0 0 0 ${pi/2} 0 0</pose>
           <geometry><cylinder><radius>${r}</radius><length>${w}</length></cylinder></geometry>
-          <surface><contact><collide_bitmask>${mask}</collide_bitmask></contact></surface>
+          <!-- <surface><contact><collide_bitmask>${mask}</collide_bitmask></contact></surface> -->
         </collision>
       </link>
     </model>
@@ -110,11 +113,14 @@
         <mass>${body_mass}</mass>
         <inertia><ixx>280</ixx><iyy>1876</iyy><izz>2062</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
       </inertial>
-      <visual name="v"><geometry><mesh><uri>model://f1_car/meshes/body.glb</uri></mesh></geometry></visual>
+      <visual name="v">
+      <pose>0 0 0 1.5708 0 0</pose>
+      <geometry><mesh><uri>model://f1_car/meshes/body.glb</uri></mesh></geometry>
+      </visual>
       <collision name="c">
         <pose>0 0 ${wheel_z} 0 0 0</pose>
         <geometry><box><size>${chassis}</size></box></geometry>
-        <surface><contact><collide_bitmask>0x04</collide_bitmask></contact></surface>
+        <!-- <surface><contact><collide_bitmask>0x04</collide_bitmask></contact></surface> -->
       </collision>
     </link>
 

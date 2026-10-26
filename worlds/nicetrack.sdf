@@ -1031,5 +1031,10 @@
       <static>false</static>
       <self_collide>false</self_collide>
     </model>
+    <include>
+      <uri>model://f1_car</uri>
+      <name>f1_car</name>
+      <pose>274.78 -131.96 2.86 0.02 0 -0.6008</pose>
+    </include>
   </world>
 </sdf>
