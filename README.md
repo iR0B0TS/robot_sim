@@ -12,7 +12,7 @@ To open your F1 Gazebo simulator in your Ubuntu VM, run:
 
 > gz sim src/folder/folder/file-name.sdf
 
-To open Gazebo without a specific project:
+To open Gazebo with the project:
 > gz sim
 set up before run: 
 source /opt/ros/jazzy/setup.bash
