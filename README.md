@@ -16,11 +16,12 @@ To open Gazebo with the project:
 > gz sim
 set up before run: 
 source /opt/ros/jazzy/setup.bash
->
-> 
+
+Then run this so it knows where the models are:
+ 
 export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:$(pwd)/models
 
-to run: 
+to run the project (pre paused): 
 gz sim worlds/nicetrack.sdf --render-engine ogre
 
 to run unpaused: 
