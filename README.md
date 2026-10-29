@@ -16,6 +16,8 @@ To open Gazebo with the project:
 > gz sim
 set up before run: 
 source /opt/ros/jazzy/setup.bash
+>
+> 
 export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:$(pwd)/models
 
 to run: 
