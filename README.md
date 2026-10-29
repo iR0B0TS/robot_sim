@@ -8,24 +8,24 @@ Description.
 
 ## Opening Gazebo
 To open your F1 Gazebo simulator in your Ubuntu VM, run:
-> cd project_folder
+```cd project_folder```
 
-> gz sim src/folder/folder/file-name.sdf
+```gz sim src/folder/folder/file-name.sdf```
 
 To open Gazebo with the project:
 
 gz sim set up: 
 
-source /opt/ros/jazzy/setup.bash
+```source /opt/ros/jazzy/setup.bash```
 
 Then run this so it knows where the models are:
  
-export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:$(pwd)/models
+```export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:$(pwd)/models```
 
 To run gz sim (pre paused): 
-gz sim worlds/nicetrack.sdf --render-engine ogre
+```gz sim worlds/nicetrack.sdf --render-engine ogre```
 
 To run gz sim : 
-gz sim -r worlds/nicetrack.sdf --render-engine ogre
+```gz sim -r worlds/nicetrack.sdf --render-engine ogre```
  
 
