@@ -6,7 +6,7 @@ Made by Kayma's bullies.
 ## Project Summary
 Description.
 
-## Opening Gazebo
+## Opening Gazebo & running project
 To open your F1 Gazebo simulator in your Ubuntu VM, run:
 
 ```cd project_folder```
